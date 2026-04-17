@@ -16,7 +16,7 @@
 
 This fork provides critical updates to ensure the pipeline runs smoothly on **Windows 11** environments. Key improvements include:
 
-- **Windows Path & URI Fixes**: Resolved issues where Windows-style backslashes and drive letters (e.g., `H:\`) caused crashes during directory creation. Fixed the `file:///` URI formatting logic required for LibreOffice headless conversion on Windows.
+- **Windows Path & URI Fixes**: Removed libraries and dependencies that were incompatible with Windows OS to ensure a smooth installation process. Resolved issues where Windows-style backslashes and drive letters (e.g., `H:\`) caused crashes during directory creation. Fixed the `file:///` URI formatting logic required for LibreOffice headless conversion on Windows.
 - **Workflow Stability (Disabled AI Commenter)**: Removed the `ablation_no_commenter` bottleneck. By bypassing the visual feedback loop that frequently triggered API 400 errors or timeouts, the generation process is now significantly faster and more reliable.
 - **Enhanced Argument Support**: Added missing CLI arguments for `--bullet_font_size` and `--section_title_font_size`, allowing users to fine-tune layout density directly from the command line without modifying source code.
 - **Typography & Layout Tuning**: Optimized default font scales for large-format (e.g., 36"x48") posters to prevent text overflow and overlapping, which were prevalent in the original layout engine.
@@ -26,7 +26,7 @@ This fork provides critical updates to ensure the pipeline runs smoothly on **Wi
 
 本项目针对原仓库在 Windows 环境下的运行瓶颈进行了深度适配与优化，主要修改如下：
 
-1.  **Windows 路径与 URI 适配**：修复了 LibreOffice 在 Windows 下将本地路径转换为 `file:///` URI 时的编码报错，解决了 `\n` 等转义字符导致的路径识别歧义。
+1.  **Windows 路径与 URI 适配**：剔除了与 Windows 系统不兼容的库和依赖项，以确保安装过程顺利进行；修复了 LibreOffice 在 Windows 下将本地路径转换为 `file:///` URI 时的编码报错，解决了 `\n` 等转义字符导致的路径识别歧义。
 2.  **流程优化 - 禁用 AI 检查员**：移除了原流程中容易导致 API 400 报错或超时的 `PosterAgent/check_comment.py` 步骤，显著提升了生成海报的成功率与响应速度。
 3.  **视觉资产定制**：针对 48 英寸大型海报，对部分文本字号（如正文、图表说明）进行了精简与排版优化（默认 14pt），确保物理打印时的阅读舒适度。
 4.  **环境配置优化**：修正了 `argparse` 参数传递缺失的问题，并更新了 `requirements.txt` 以适配 Windows 端的依赖包。
