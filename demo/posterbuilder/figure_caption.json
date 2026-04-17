@@ -1,0 +1,362 @@
+{
+    "1": {
+        "caption": "Figure 1: Overview of this work. We address two core challenges in scientific poster generation: Left: How to create a poster from a paper -we propose PosterAgent (Sec. 4), a framework that transforms long-context scientific papers (20K+ tokens) into structured visual posters; and Right: How to evaluate poster quality -weintroduce the Paper2Poster benchmark (Sec. 3), which enables systematic comparison between agent-generated and author-designed posters.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-1.png",
+        "width": 239,
+        "height": 271,
+        "figure_size": 64769,
+        "figure_aspect": 0.8819188191881919
+    },
+    "3": {
+        "caption": "Paper ( 20K tokens )",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-3.png",
+        "width": 398,
+        "height": 265,
+        "figure_size": 105470,
+        "figure_aspect": 1.5018867924528303
+    },
+    "6": {
+        "caption": "Figure 2: Data Statistics of Paper2Poster. (a) Word cloud illustrating the diversity of research topics. (b) Textual Token statistics and Figure count statistics for input papers vs. posters provided by authors. Overall, these statistics highlight that Paper2Poster is a multimodal context compression task, requiring effective abstraction of both textual and visual content.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-6.png",
+        "width": 564,
+        "height": 557,
+        "figure_size": 314148,
+        "figure_aspect": 1.0125673249551166
+    },
+    "7": {
+        "caption": "Figure 3: Left : Overview of the evaluation framework in Paper2Poster. Middle : We automatically generate multiple-choice questions from each paper using an LLM (o3), forming the our PaperQuiz evaluation. Right : In PaperQuiz, we simulate multiple reader by allowing VLMs-representing different expertise levels ( e.g., student, professor)-to read each generated poster and answer the quiz. The poster that achieves the highest average score is considered the most effective in conveying the paper's content.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-7.png",
+        "width": 1983,
+        "height": 394,
+        "figure_size": 781302,
+        "figure_aspect": 5.032994923857868
+    },
+    "8": {
+        "caption": "Figure 4: Illustration of the PosterAgent pipeline. Given an input paper, PosterAgent generates a structured academic poster through three modules: 1. Parser: Extracts key textual and visual assets using a combination of tools and LLM-based summarization, resulting in a structured asset library. 2. Planner: Matches assets and arranges them into coherent layouts, iteratively generating panels with a zoom-in operation. 3. Painter-Commenter: The Painter generates panel-level bullet-content along with executable code, and renders the visual output, while the Commenter-a VLM with in-context reference-provides feedback to ensure layout coherence and prevent content overflow.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-8.png",
+        "width": 1972,
+        "height": 969,
+        "figure_size": 1910868,
+        "figure_aspect": 2.0350877192982457
+    },
+    "9": {
+        "caption": "Figure 5: PaperQuiz's Avg. scores across different Reader VLMs (x-axis) for each poster type (legend lines). Refer to Append. Tab. 3 for full model names.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-9.png",
+        "width": 769,
+        "height": 505,
+        "figure_size": 388345,
+        "figure_aspect": 1.5227722772277228
+    },
+    "10": {
+        "caption": "Figure 7 presents the average token cost per poster across different methods. Our PosterAgent achieves great token efficiency, using only 101 . 1 K (4o-based) and 47 . 6 K (Qwen-based) tokens-reducing cost by 60% -87% compared to OWL-4o [6]. This translates to just $0 . 55 for 4o and $0 . 0045 for Qwen per poster, highlighting its effectiveness, (see Append. E.2 for further details).",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-10.png",
+        "width": 1948,
+        "height": 1100,
+        "figure_size": 2142800,
+        "figure_aspect": 1.770909090909091
+    },
+    "11": {
+        "caption": "Figure 7: Average token consumptions for different methods. Details are provided in Appendix E.1.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-11.png",
+        "width": 701,
+        "height": 505,
+        "figure_size": 354005,
+        "figure_aspect": 1.388118811881188
+    },
+    "12": {
+        "caption": "Figure 6: PaperQuiz's Avg scores across different types of posters (x-axis) for readers (colored lines) on human evaluation subset.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-12.png",
+        "width": 661,
+        "height": 428,
+        "figure_size": 282908,
+        "figure_aspect": 1.544392523364486
+    },
+    "13": {
+        "caption": "Figure 10: Posters for MuSc: Zero-Shot Industrial Anomaly Classification and Segmentation with Mutual Scoring of the Unlabeled Images.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-13.png",
+        "width": 960,
+        "height": 521,
+        "figure_size": 500160,
+        "figure_aspect": 1.8426103646833014
+    },
+    "15": {
+        "caption": "(b) PosterAgent-generated poster.(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-15.png",
+        "width": 1993,
+        "height": 810,
+        "figure_size": 1614330,
+        "figure_aspect": 2.460493827160494
+    },
+    "16": {
+        "caption": "(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-16.png",
+        "width": 945,
+        "height": 680,
+        "figure_size": 642600,
+        "figure_aspect": 1.3897058823529411
+    },
+    "17": {
+        "caption": "(b) PosterAgent-generated poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-17.png",
+        "width": 957,
+        "height": 708,
+        "figure_size": 677556,
+        "figure_aspect": 1.3516949152542372
+    },
+    "18": {
+        "caption": "Figure 11: Posters for Neuroformer: Multimodal and Multitask Generative Pretraining for Brain Data.(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-18.png",
+        "width": 938,
+        "height": 620,
+        "figure_size": 581560,
+        "figure_aspect": 1.5129032258064516
+    },
+    "19": {
+        "caption": "Figure 12: Posters for Conformal Semantic Keypoint Detection with Statistical Guarantees.(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-19.png",
+        "width": 1176,
+        "height": 596,
+        "figure_size": 700896,
+        "figure_aspect": 1.9731543624161074
+    },
+    "20": {
+        "caption": "Figure 13: Posters for Neural Tangent Kernels for Axis-Aligned Tree Ensembles.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-20.png",
+        "width": 790,
+        "height": 598,
+        "figure_size": 472420,
+        "figure_aspect": 1.3210702341137124
+    },
+    "22": {
+        "caption": "(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-22.png",
+        "width": 929,
+        "height": 583,
+        "figure_size": 541607,
+        "figure_aspect": 1.5934819897084047
+    },
+    "23": {
+        "caption": "Figure 16: Posters for Identifying the Context Shift between Test Benchmarks and Production Data.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-23.png",
+        "width": 958,
+        "height": 646,
+        "figure_size": 618868,
+        "figure_aspect": 1.4829721362229102
+    },
+    "24": {
+        "caption": "(a) Author-designed poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-24.png",
+        "width": 1190,
+        "height": 567,
+        "figure_size": 674730,
+        "figure_aspect": 2.0987654320987654
+    },
+    "29": {
+        "caption": "(a) Direct.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-29.png",
+        "width": 896,
+        "height": 323,
+        "figure_size": 289408,
+        "figure_aspect": 2.7739938080495357
+    },
+    "30": {
+        "caption": "(b) Tree.(c) Tree + Commenter.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-30.png",
+        "width": 899,
+        "height": 644,
+        "figure_size": 578956,
+        "figure_aspect": 1.3959627329192548
+    },
+    "31": {
+        "caption": "Figure 17: Ablation study on Neuro-Symbolic Language Modeling with Automaton-augmented Retrieval. Text overflow areas are highlighted with red bounding boxes.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-31.png",
+        "width": 897,
+        "height": 679,
+        "figure_size": 609063,
+        "figure_aspect": 1.321060382916053
+    },
+    "33": {
+        "caption": "Figure 18: Ablation study on Visual Correspondence Hallucination. Text overflow areas are highlighted with red bounding boxes.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-33.png",
+        "width": 895,
+        "height": 274,
+        "figure_size": 245230,
+        "figure_aspect": 3.2664233576642334
+    },
+    "34": {
+        "caption": "(b) Tree.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-34.png",
+        "width": 900,
+        "height": 511,
+        "figure_size": 459900,
+        "figure_aspect": 1.761252446183953
+    },
+    "35": {
+        "caption": "(c) Tree + Commenter.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-35.png",
+        "width": 901,
+        "height": 513,
+        "figure_size": 462213,
+        "figure_aspect": 1.756335282651072
+    },
+    "37": {
+        "caption": "Figure 19: Ablation study on DARTFormer: Finding The Best Type Of Attention. Text overflow areas are highlighted with red bounding boxes, large blank regions are highlighted with purple bounding boxes.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-37.png",
+        "width": 895,
+        "height": 747,
+        "figure_size": 668565,
+        "figure_aspect": 1.1981258366800536
+    },
+    "39": {
+        "caption": "(c) Tree + Commenter.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-39.png",
+        "width": 899,
+        "height": 1187,
+        "figure_size": 1067113,
+        "figure_aspect": 0.7573715248525695
+    },
+    "41": {
+        "caption": "Figure 20: Ablation study on CW-ERM: Improving Autonomous Driving Planning with Closed-loop Weighted Empirical Risk Minimization. Text overflow areas are highlighted with red bounding boxes, and large blank regions are highlighted with purple bounding boxes.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-41.png",
+        "width": 898,
+        "height": 1345,
+        "figure_size": 1207810,
+        "figure_aspect": 0.6676579925650558
+    },
+    "43": {
+        "caption": "(c) Tree + Commenter.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-43.png",
+        "width": 908,
+        "height": 1341,
+        "figure_size": 1217628,
+        "figure_aspect": 0.6771066368381805
+    },
+    "45": {
+        "caption": "Figure 21: Ablation study on DeepJoint: Robust Survival Modelling Under Clinical Presence Shift. Text overflow areas are highlighted with red bounding boxes.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-45.png",
+        "width": 894,
+        "height": 1234,
+        "figure_size": 1103196,
+        "figure_aspect": 0.7244732576985413
+    },
+    "48": {
+        "caption": "(c) Tree + Commenter.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-48.png",
+        "width": 902,
+        "height": 1266,
+        "figure_size": 1141932,
+        "figure_aspect": 0.7124802527646129
+    },
+    "49": {
+        "caption": "(a) A poster generated by 4o-Image , where substantial corrupted text is generated.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-49.png",
+        "width": 949,
+        "height": 1409,
+        "figure_size": 1337141,
+        "figure_aspect": 0.673527324343506
+    },
+    "50": {
+        "caption": "(b) A poster generated by PPTAgent , where meaningless template placeholder text is remained.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-50.png",
+        "width": 956,
+        "height": 1433,
+        "figure_size": 1369948,
+        "figure_aspect": 0.6671318911374738
+    },
+    "51": {
+        "caption": "Figure 22: Examples of posters with corrupted text.(a) A poster generated by 4o-Image , where the poster is cutoff horizontally due to incomplete generation.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-51.png",
+        "width": 966,
+        "height": 887,
+        "figure_size": 856842,
+        "figure_aspect": 1.0890642615558062
+    },
+    "52": {
+        "caption": "Figure 23: Examples of posters with cutoff.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-52.png",
+        "width": 948,
+        "height": 962,
+        "figure_size": 911976,
+        "figure_aspect": 0.9854469854469855
+    },
+    "53": {
+        "caption": "(a) A poster produced by 4o-Image , featuring a figure that is low-resolution, visually corrupted, and unintelligible.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-53.png",
+        "width": 968,
+        "height": 951,
+        "figure_size": 920568,
+        "figure_aspect": 1.017875920084122
+    },
+    "54": {
+        "caption": "(b) A poster generated by PPTAgent , where figures are rendered too small to be legible.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-54.png",
+        "width": 958,
+        "height": 1277,
+        "figure_size": 1223366,
+        "figure_aspect": 0.750195771339076
+    },
+    "55": {
+        "caption": "Figure 24: Examples of posters with obscure figures.(a) A poster generated by OWL-4o , where there are large blanks on the poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-55.png",
+        "width": 954,
+        "height": 680,
+        "figure_size": 648720,
+        "figure_aspect": 1.4029411764705881
+    },
+    "56": {
+        "caption": "Figure 25: Examples of posters with large blanks.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-56.png",
+        "width": 955,
+        "height": 723,
+        "figure_size": 690465,
+        "figure_aspect": 1.3208852005532503
+    },
+    "57": {
+        "caption": "(a) A poster generated by OWL-4o , where no figures are inserted into poster.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-57.png",
+        "width": 959,
+        "height": 549,
+        "figure_size": 526491,
+        "figure_aspect": 1.7468123861566485
+    },
+    "58": {
+        "caption": "Figure 26: Examples of posters without figures.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-58.png",
+        "width": 962,
+        "height": 1435,
+        "figure_size": 1380470,
+        "figure_aspect": 0.670383275261324
+    },
+    "59": {
+        "caption": "(a) A poster generated by PosterAgent-Qwen , where there is text overflowing outside textbox.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-59.png",
+        "width": 957,
+        "height": 1277,
+        "figure_size": 1222089,
+        "figure_aspect": 0.7494126859827721
+    },
+    "60": {
+        "caption": "Figure 27: Examples of posters with textual overflow.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-60.png",
+        "width": 956,
+        "height": 640,
+        "figure_size": 611840,
+        "figure_aspect": 1.49375
+    },
+    "61": {
+        "caption": "Figure 29: In-context references for the commenter help the VLM better identify whether the current panel falls into a failure case.",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-61.png",
+        "width": 1199,
+        "height": 828,
+        "figure_size": 992772,
+        "figure_aspect": 1.4480676328502415
+    },
+    "63": {
+        "caption": "Figure 28: Failure generation examples by Stable Diffusion Ultra model [28].",
+        "image_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-63.png",
+        "width": 1193,
+        "height": 785,
+        "figure_size": 936505,
+        "figure_aspect": 1.5197452229299364
+    }
+}

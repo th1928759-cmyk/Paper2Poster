@@ -1,0 +1,13 @@
+input/
+output/
+runs
+Paper2Video/assets/
+posterbuilder/latex_proj/figures/
+*.pdf
+*.jpg
+*.wav
+*.mp4
+__pycache__/
+
+# keep logos in template/logos
+!template/logos/**

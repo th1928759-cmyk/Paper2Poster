@@ -1,0 +1,89 @@
+<Poster Width="1734" Height="2168">
+	<Panel left="29" right="294" width="814" height="402">
+		<Text>Goals & Motivations</Text>
+		<Text>•  Create a classification framework robust to uncontrolled,</Text>
+		<Text>real world images while avoiding over fitting</Text>
+		<Text>•  Explore localized classification on facial discriminative</Text>
+		<Text>regions to increase accuracy rate that can overcome:</Text>
+		<Text>•  Pose</Text>
+		<Text>•  Alignment</Text>
+		<Text>•  Facial expressions</Text>
+		<Text>•  Occlusions</Text>
+	</Panel>
+
+	<Panel left="28" right="698" width="813" height="638">
+		<Text>Dataset</Text>
+		<Text>•  Database comprises 26,766 (13383 male/female) unique</Text>
+		<Text>faces collected from Flickr by the CMU Biometrics Center</Text>
+		<Text>•  Workers on Amazon Mechanical Turk landmarked key</Text>
+		<Text>points on the face and provided gender ground truth</Text>
+		<Text>•  High variation in pose, illumination, expression, resolution</Text>
+		<Text>•  Preprocessing performed to normalize rotation and scale</Text>
+		<Text>variation</Text>
+		<Figure left="67" right="1059" width="179" height="227" no="1" OriWidth="0.126874" OriHeight="0.143048
+" />
+		<Text>Fig: Seven facial landmark points</Text>
+		<Figure left="334" right="1100" width="126" height="172" no="2" OriWidth="0.130911" OriHeight="0.118093
+" />
+		<Text> Fig: Point cloud distribution</Text>
+		<Figure left="522" right="1010" width="313" height="278" no="3" OriWidth="0.260669" OriHeight="0.179144
+" />
+		<Text> Fig: Sample images from database</Text>
+	</Panel>
+
+	<Panel left="24" right="1338" width="819" height="812">
+		<Text>Region Selection & Localization</Text>
+		<Text>•  Local regions improves alignment in each region</Text>
+		<Text>•  These regions are non-overlapping, so they can be</Text>
+		<Text>manipulated individually and treated as orthogonal</Text>
+		<Text>•  Regions selected based on:</Text>
+		<Text>•  Discriminant ability of SVM weight vector</Text>
+		<Text>•  Fisher Discriminant Analysis (LDA)</Text>
+		<Text>•  Perceptual and psychological studies by Brown et al.</Text>
+		<Text>•  Bounding boxes are heuristically determined facial ratios</Text>
+		<Figure left="22" right="1748" width="155" height="330" no="4" OriWidth="0.1435985" OriHeight="0.236186
+" />
+		<Text> Fig: Fisher , SVM, weight vector</Text>
+		<Text>(Top to bottom)</Text>
+		<Figure left="223" right="1744" width="623" height="339" no="5" OriWidth="0.230104" OriHeight="0.0975936
+" />
+		<Text> Fig: Regions of Interest</Text>
+	</Panel>
+
+	<Panel left="888" right="292" width="822" height="720">
+		<Text>Implementation</Text>
+		<Text>•  Gender features are well represented through texture</Text>
+		<Text>•  A separate linear SVM is trained on each of the regions•  MR8 filter bank robust to rotation and scaling</Text>
+		<Text>•  The SVM classifications are fused with</Text>
+		<Text>•  Majority voting scheme</Text>
+		<Text>•  Confidence of SVM margin fit to a logistic function</Text>
+		<Text>•  Naïve Bayes classifier trained on margin distance</Text>
+		<Text>•  Logistic regression trained on margin distance</Text>
+		<Text>•  Taking the raw sum of distances to the margin</Text>
+		<Figure left="906" right="737" width="801" height="243" no="6" OriWidth="0" OriHeight="0
+" />
+		<Text> Fig: Algorithm implementation</Text>
+	</Panel>
+
+	<Panel left="889" right="1012" width="829" height="1089">
+		<Text>Results & Conclusion</Text>
+		<Text>•  Results reported on 5-fold cross validation for each dataset</Text>
+		<Text>•  Despite the significant loss of information for each ROI,</Text>
+		<Text>each still has significant discriminant power</Text>
+		<Text>•  The SVM distance margins in each regions provides</Text>
+		<Text>independent prediction of gender</Text>
+		<Text>•  Results in a 5 dimensional feature space</Text>
+		<Text>•  Likely to better separate due to region localization</Text>
+		<Figure left="884" right="1353" width="381" height="183" no="7" OriWidth="0.311418" OriHeight="0.114305
+" />
+		<Text> Fig: Visualization FERET score distribution</Text>
+		<Figure left="1329" right="1351" width="373" height="183" no="8" OriWidth="0.304498" OriHeight="0.1156415
+" />
+		<Text> Fig: Visualization Flickr score distribution</Text>
+		<Figure left="982" right="1569" width="545" height="294" no="9" OriWidth="0.27278" OriHeight="0.170232
+" />
+		<Figure left="986" right="1877" width="542" height="223" no="10" OriWidth="0.277393" OriHeight="0.0931373
+" />
+	</Panel>
+
+</Poster>

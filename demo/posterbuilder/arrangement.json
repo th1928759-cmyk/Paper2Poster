@@ -1,0 +1,115 @@
+{
+    "panels": [
+        {
+            "panel_id": 0,
+            "section_name": "Why Posters Are Hard",
+            "tp": 0.12082710513203787,
+            "text_len": 485,
+            "gp": 0.009888851380803912,
+            "figure_size": 64769,
+            "figure_aspect": 0.8819188191881919
+        },
+        {
+            "panel_id": 1,
+            "section_name": "Benchmark and Data",
+            "tp": 0.12531141006477328,
+            "text_len": 503,
+            "gp": 0.04796373085236436,
+            "figure_size": 314148,
+            "figure_aspect": 1.0125673249551166
+        },
+        {
+            "panel_id": 2,
+            "section_name": "PaperQuiz: What Matters",
+            "tp": 0.11285500747384156,
+            "text_len": 453,
+            "gp": 0.1192882298865948,
+            "figure_size": 781302,
+            "figure_aspect": 5.032994923857868
+        },
+        {
+            "panel_id": 3,
+            "section_name": "PosterAgent Pipeline",
+            "tp": 0.10637767812655705,
+            "text_len": 427,
+            "gp": 0.29174897960959734,
+            "figure_size": 1910868,
+            "figure_aspect": 2.0350877192982457
+        },
+        {
+            "panel_id": 4,
+            "section_name": "Parser: Structured Assets",
+            "tp": 0.10612855007473841,
+            "text_len": 426,
+            "gp": 0,
+            "figure_size": 0,
+            "figure_aspect": 1
+        },
+        {
+            "panel_id": 5,
+            "section_name": "Planner: Layout Mastery",
+            "tp": 0.10089686098654709,
+            "text_len": 405,
+            "gp": 0.08839429109643054,
+            "figure_size": 578956,
+            "figure_aspect": 1.3959627329192548
+        },
+        {
+            "panel_id": 6,
+            "section_name": "Painter\u2013Commenter Loop",
+            "tp": 0.10662680617837568,
+            "text_len": 428,
+            "gp": 0.15157520979208358,
+            "figure_size": 992772,
+            "figure_aspect": 1.4480676328502415
+        },
+        {
+            "panel_id": 7,
+            "section_name": "Results: Stronger, Leaner",
+            "tp": 0.10986547085201794,
+            "text_len": 441,
+            "gp": 0.2911407073821255,
+            "figure_size": 1906884,
+            "figure_aspect": 2.0434782608695654
+        },
+        {
+            "panel_id": 8,
+            "section_name": "Limits and Next Steps",
+            "tp": 0.1111111111111111,
+            "text_len": 446,
+            "gp": 0,
+            "figure_size": 0,
+            "figure_aspect": 1
+        }
+    ],
+    "figure_arrangement": [
+        {
+            "panel_id": 0,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-1.png"
+        },
+        {
+            "panel_id": 1,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-6.png"
+        },
+        {
+            "panel_id": 2,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-7.png"
+        },
+        {
+            "panel_id": 3,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-8.png"
+        },
+        {
+            "panel_id": 5,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-30.png"
+        },
+        {
+            "panel_id": 6,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-picture-61.png"
+        },
+        {
+            "panel_id": 7,
+            "figure_path": "<gpt-5_gpt-5>_images_and_tables/paper/paper-table-1.png"
+        }
+    ]
+}

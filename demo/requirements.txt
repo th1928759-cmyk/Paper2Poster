@@ -1,0 +1,84 @@
+--prefer-binary
+
+# ========= Core Runtime =========
+numpy==1.26.4
+pandas
+torch==2.5.1
+torchvision==0.20.1
+Pillow==10.4.0
+opencv-python==4.11.0.86
+pdf2image==1.17.0
+PyMuPDF==1.25.2
+moviepy==1.0.3
+aiofiles==24.1.0
+aiohttp==3.11.11
+tqdm==4.67.1
+matplotlib==3.10.0
+scikit-learn==1.6.1
+scipy==1.15.1
+sentence-transformers==3.3.1
+transformers==4.48.0
+
+# ========= ML / LLM Frameworks =========
+accelerate
+huggingface-hub==0.27.1
+openai==1.59.8
+pydantic==2.10.6
+
+# ========= Web / API / Async =========
+fastapi==0.115.6
+uvicorn==0.32.1
+requests==2.32.3
+httpx==0.27.2
+nest-asyncio==1.6.0
+
+# ========= Utils =========
+filelock==3.16.1
+regex==2024.11.6
+PyYAML==6.0.2
+typing_extensions==4.12.2
+rich==13.9.4
+coloredlogs==15.0.1
+marker-pdf==1.1.0
+json_repair==0.35.0
+
+# ========= PDF / DOC / PPT =========
+python-docx==1.1.2
+python-pptx @ git+https://github.com/Force1ess/python-pptx@dc356685d4d210a10abe1ffab3c21315cdfae63d
+pypdf==5.2.0
+pypandoc==1.15
+
+# ========= Additional =========
+xformers==0.0.28.post3
+arxiv==2.1.3
+arxiv2text==0.1.14
+agentops==0.3.26
+pymilvus==2.5.4
+peft==0.14.0
+diffusers==0.25.1
+einops==0.8.0
+camel-ai>=0.2.0
+tabled-pdf==0.2.0
+texify==0.2.1
+json_repair==0.35.0
+docling-core==2.48.4
+docling-ibm-models==3.9.1
+docling-parse==4.5.0
+marko==2.1.2
+python-docx==1.1.2
+deepsearch-glm==1.0.0
+openpyxl==3.1.5
+
+# ========= LangChain / LLMs =========
+langchain==0.3.17
+langchain-community==0.3.16
+langchain-core==0.3.33
+langchain-openai==0.3.3
+
+# ========= Image / Layout / OCR =========
+layoutparser==0.3.4
+easyocr
+pytesseract==0.3.13
+shapely==2.0.7
+WeasyPrint==52.5
+CairoSVG==2.7.1

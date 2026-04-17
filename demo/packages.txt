@@ -1,0 +1,6 @@
+texlive-xetex
+texlive-luatex
+texlive-latex-extra
+texlive-pictures
+texlive-fonts-recommended
+latexmk

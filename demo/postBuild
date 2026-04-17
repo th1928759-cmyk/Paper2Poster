@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+echo "[postBuild] Installing system fonts (Raleway, Lato) for fontspec"
+if command -v apt-get >/dev/null 2>&1; then
+  apt-get update && apt-get install -y fonts-raleway fonts-lato fonts-dejavu-core fonts-dejavu-extra || true
+  fc-cache -f -v || true
+else
+  echo "[postBuild] apt-get not available; skipping font install"
+fi
+
+echo "[postBuild] Done"

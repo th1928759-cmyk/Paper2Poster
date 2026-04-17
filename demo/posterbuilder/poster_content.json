@@ -1,0 +1,45 @@
+{
+    "meta": {
+        "poster_title": "Paper2Poster: Towards Multimodal Poster",
+        "authors": "Wei Pang\\textsuperscript{1}, Kevin Qinghong Lin\\textsuperscript{2}, Xiangru Jian\\textsuperscript{1}, Xi He\\textsuperscript{1}, Philip Torr\\textsuperscript{3}",
+        "affiliations": "1 University of Waterloo; 2 National University of Singapore; 3 University of Oxford"
+    },
+    "sections": [
+        {
+            "title": "Why Posters Are Hard",
+            "content": "We target \\textbf{single-page, multimodal compression} of \\textit{20K+ tokens} into clear panels. Posters demand \\textcolor{blue}{tight text\u2013visual coupling}, \\textbf{layout balance}, and \\textit{readable density}. Pure LLM/VLM approaches \\textcolor{red}{miss spatial feedback}, causing overflow and incoherence. We reveal that \\textbf{visual-in-the-loop planning} is essential to preserve reading order, keep figures relevant, and sustain \\textit{engagement} within hard space limits."
+        },
+        {
+            "title": "Benchmark and Data",
+            "content": "We launch the \\textbf{Paper2Poster Benchmark}: \\textcolor{blue}{100 paper\u2013poster pairs} spanning \\textit{280 topics}. Average input: \\textcolor{blue}{20,370 tokens, 22.6 pages}. Output posters compress text by \\textcolor{blue}{14.4\u00d7} and figures by \\textcolor{blue}{2.6\u00d7}. Evaluation covers \\textbf{Visual Quality}, \\textbf{Textual Coherence}, \\textbf{VLM-as-Judge}, and \\textbf{PaperQuiz}. This suite spotlights \\textit{semantic alignment}, \\textbf{fluency}, and \\textcolor{blue}{reader comprehension}."
+        },
+        {
+            "title": "PaperQuiz: What Matters",
+            "content": "We generate \\textcolor{blue}{100 MCQs/paper}: \\textbf{50 verbatim} + \\textbf{50 interpretive}. Multiple VLM readers simulate \\textit{novice-to-expert} audiences and answer from the poster only. Scores are length-penalized to reward \\textbf{dense clarity}. Results \\textbf{correlate with human judgment}, proving PaperQuiz captures \\textcolor{blue}{information delivery} beyond surface visuals and discourages \\textcolor{red}{verbose, unfocused designs}."
+        },
+        {
+            "title": "PosterAgent Pipeline",
+            "content": "Our \\textbf{top-down, visual-in-the-loop} agent compresses long papers into coherent posters. \u2022 \\textbf{Parser} builds a structured asset library. \u2022 \\textbf{Planner} aligns text\u2013visual pairs and produces a \\textcolor{blue}{binary-tree layout}. \u2022 \\textbf{Painter\u2013Commenter} renders panels via code and uses VLM feedback to fix \\textcolor{red}{overflow} and misalignment. The result: \\textbf{balanced, legible}, editable posters."
+        },
+        {
+            "title": "Parser: Structured Assets",
+            "content": "We distill PDFs into \\textbf{section synopses} and \\textit{figure/table assets} using \\textcolor{blue}{MARKER} and \\textcolor{blue}{DOCLING}, then LLM summarization. The asset library preserves \\textbf{hierarchy} and \\textit{semantics} while shrinking context for efficient planning. This step boosts \\textbf{visual-semantic matching} and reduces \\textcolor{red}{noise}, enabling reliable downstream \\textit{layout reasoning}."
+        },
+        {
+            "title": "Planner: Layout Mastery",
+            "content": "We semantically match \\textbf{sections \u2194 figures} and allocate space via a \\textcolor{blue}{binary-tree layout} that preserves \\textit{reading order}, aspect ratios, and \\textbf{content length} estimates. Panels are populated iteratively, ensuring \\textbf{text brevity} and \\textit{visual balance}. This strategy stabilizes coordinates and avoids \\textcolor{red}{LLM numeric drift} in absolute placements."
+        },
+        {
+            "title": "Painter\u2013Commenter Loop",
+            "content": "The \\textbf{Painter} turns section\u2013figure pairs into crisp bullets and executable \\textcolor{blue}{python-pptx} code, rendering draft panels. The \\textbf{Commenter} VLM zooms into panels, using \\textit{in-context examples} to flag \\textcolor{red}{overflow} or \\textcolor{red}{blankness}. Iterations continue until \\textbf{fit and alignment} are achieved, producing \\textit{readable, compact} panels with minimal revision cycles."
+        },
+        {
+            "title": "Results: Stronger, Leaner",
+            "content": "Our open-source variants beat \\textcolor{blue}{4o-driven multi-agents} on most metrics, with \\textcolor{blue}{87\\% fewer tokens}. We hit \\textbf{state-of-the-art figure relevance}, near-\\textit{GT} visual similarity, and \\textbf{high VLM-as-Judge} scores. PaperQuiz confirms \\textbf{better knowledge transfer}. Cost is tiny: \\textcolor{blue}{\\$0.0045\u2013\\$0.55/poster}. Key bottleneck remains \\textcolor{red}{Engagement}, guiding future design."
+        },
+        {
+            "title": "Limits and Next Steps",
+            "content": "Current bottleneck: \\textbf{sequential panel refinement} slows throughput (~\\textcolor{blue}{4.5 min/doc}). We plan \\textbf{panel-level parallelism}, \\textit{external knowledge} integration (e.g., OpenReview), and \\textbf{human-in-the-loop} editing for higher \\textcolor{blue}{engagement}. These upgrades aim to boost \\textbf{runtime, interactivity}, and \\textit{visual storytelling}, pushing toward fully automated \\textbf{author-grade posters}."
+        }
+    ]
+}
