@@ -1,6 +1,7 @@
 # 🎓Paper2Poster: Multimodal Poster Automation from Scientific Papers
 # 从学术论文自动生成学术海报
 
+
 <p align="center">
   <a href="https://arxiv.org/abs/2505.21497" target="_blank"><img src="https://img.shields.io/badge/arXiv-2505.21497-red"></a>
   <a href="https://paper2poster.github.io/" target="_blank"><img src="https://img.shields.io/badge/Project-Page-brightgreen"></a>
@@ -9,6 +10,35 @@
   <a href="https://x.com/_akhaliq/status/1927721150584390129" target="_blank"><img alt="X (formerly Twitter) URL" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fx.com%2F_akhaliq%2Fstatus%2F1927721150584390129"></a>
   <a href="https://huggingface.co/spaces/camel-ai/Paper2Poster" target="_blank"> <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces%20Demo-blue"> </a>
 </p>
+
+
+## 🚀 Windows Compatibility & Optimization Version
+
+This fork provides critical updates to ensure the pipeline runs smoothly on **Windows 11** environments. Key improvements include:
+
+- **Windows Path & URI Fixes**: Resolved issues where Windows-style backslashes and drive letters (e.g., `H:\`) caused crashes during directory creation. Fixed the `file:///` URI formatting logic required for LibreOffice headless conversion on Windows.
+- **Workflow Stability (Disabled AI Commenter)**: Removed the `ablation_no_commenter` bottleneck. By bypassing the visual feedback loop that frequently triggered API 400 errors or timeouts, the generation process is now significantly faster and more reliable.
+- **Enhanced Argument Support**: Added missing CLI arguments for `--bullet_font_size` and `--section_title_font_size`, allowing users to fine-tune layout density directly from the command line without modifying source code.
+- **Typography & Layout Tuning**: Optimized default font scales for large-format (e.g., 36"x48") posters to prevent text overflow and overlapping, which were prevalent in the original layout engine.
+- **Custom Branding Assets**: Integrated local directory support for institutional logos and custom photography watermarks.
+
+## 🚀 Windows 适配增强版 (Modified Version)
+
+本项目针对原仓库在 Windows 环境下的运行瓶颈进行了深度适配与优化，主要修改如下：
+
+1.  **Windows 路径与 URI 适配**：修复了 LibreOffice 在 Windows 下将本地路径转换为 `file:///` URI 时的编码报错，解决了 `\n` 等转义字符导致的路径识别歧义。
+2.  **流程优化 - 禁用 AI 检查员**：移除了原流程中容易导致 API 400 报错或超时的 `PosterAgent/check_comment.py` 步骤，显著提升了生成海报的成功率与响应速度。
+3.  **视觉资产定制**：针对 48 英寸大型海报，对部分文本字号（如正文、图表说明）进行了精简与排版优化（默认 14pt），确保物理打印时的阅读舒适度。
+4.  **环境配置优化**：修正了 `argparse` 参数传递缺失的问题，并更新了 `requirements.txt` 以适配 Windows 端的依赖包。
+
+
+---
+**Note:** The sections below are from the original author's repository.
+**注意：** 以下内容来自原作者的代码仓库说明。
+---
+
+
+
 
 We address **How to create a poster from a paper** and **How to evaluate poster.**
 
